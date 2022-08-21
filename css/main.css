@@ -796,6 +796,14 @@ ul {
 	display: flex;
 	align-items: center;
 }
+.our-skills img {
+	flex: 1;
+}
+@media (max-width: 991px) {
+	.our-skills img {
+		display: none;
+	}
+}
 .our-skills .skills {
 	flex: 1;
 }
@@ -823,11 +831,6 @@ ul {
 	top: 0;
 	left: 0;
 	transition: width 1s linear;
-}
-@media (max-width: 991px) {
-	.our-skills img {
-		display: none;
-	}
 }
 /* End Skills */
 /* Start Work Steps */
