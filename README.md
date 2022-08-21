@@ -1,8 +1,6 @@
 # Template-3
 Practicing HTML, CSS, and JavaScript by creating this beautiful website.
 
-# Practice Template-3
-
 ## Live Demo:
   https://obaidash99.github.io/Template-3/
 
