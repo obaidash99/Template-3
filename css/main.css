@@ -218,6 +218,10 @@ ul {
 	top: calc(100% + 50px);
 	transition: top var(--main-transition-duration), opacity var(--main-transition-duration);
 }
+.fa-server::before {
+	content: '';
+	font-weight: 900;
+}
 @media (max-width: 767px) {
 	.header .mega-menu {
 		flex-direction: column;
