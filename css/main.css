@@ -180,14 +180,17 @@ ul {
 	overflow: hidden;
 	transition: var(--main-transition-duration);
 }
+.header .main-nav .mode a {
+	font-size: 20px;
+}
 @media (max-width: 767px) {
-	.header .main-nav > li > a {
+	.header .main-nav > li:not(:last-child) > a {
 		padding: 10px;
 		font-size: 14px;
 		height: 30px;
 	}
 }
-.header .main-nav > li > a:before {
+.header .main-nav > li:not(:last-child) > a:before {
 	content: '';
 	position: absolute;
 	width: 100%;
