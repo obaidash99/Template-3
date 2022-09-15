@@ -745,6 +745,9 @@ ul {
 	padding-bottom: var(--main-padding-bottom);
 	position: relative;
 }
+.team.dark {
+	background-color: var(--dark-background);
+}
 .team .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -840,6 +843,9 @@ ul {
 .team .box .info p {
 	margin-top: 10px;
 	margin-bottom: 25px;
+}
+.team.dark .box .info p {
+	color: var(--light-background);
 }
 /* End Team */
 /* Start Services */
