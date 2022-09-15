@@ -10,8 +10,8 @@
 	--main-transition-duration: 0.5s;
 	--main-padding-top: 100px;
 	--main-padding-bottom: 100px;
-	--section-background: #ececec;
-	--dark-section-background: #535353;
+	--section-background: #a9a9a9;
+	--dark-section-background: #2d2d2d;
 	--dark-background: rgb(35, 35, 35);
 	--light-background: #fff;
 }
@@ -301,6 +301,10 @@ ul {
 .landing {
 	position: relative;
 }
+.landing.dark {
+	background-color: var(--dark-background);
+	z-index: -1;
+}
 .landing::before {
 	content: '';
 	position: absolute;
@@ -312,6 +316,9 @@ ul {
 	z-index: -1;
 	transform: skewY(-6deg);
 	transform-origin: top left;
+}
+.landing.dark::before {
+	background-color: var(--dark-section-background);
 }
 .landing .container {
 	min-height: calc(100vh - 73.56px);
@@ -330,7 +337,10 @@ ul {
 .landing .text h1 {
 	font-size: 40px;
 	margin: 0;
-	letter-spacing: -2px;
+	letter-spacing: 0px;
+}
+.landing.dark .text h1 {
+	color: var(--light-background);
 }
 @media (max-width: 767px) {
 	.landing .text h1 {
@@ -343,6 +353,9 @@ ul {
 	margin: 5px 0 0;
 	color: #666;
 	max-width: 500px;
+}
+.landing.dark .text p {
+	color: var(--section-background);
 }
 @media (max-width: 767px) {
 	.landing .text p {
@@ -385,6 +398,9 @@ ul {
 	padding-bottom: var(--main-padding-bottom);
 	position: relative;
 }
+.articles.dark {
+	background-color: var(--dark-background);
+}
 .articles .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -397,6 +413,9 @@ ul {
 	overflow: hidden;
 	transition: transform var(--main-transition-duration),
 		box-shadow var(--main-transition-duration);
+}
+.articles.dark .box {
+	background-color: var(--dark-section-background);
 }
 .articles .box:hover {
 	transform: translateY(-10px);
@@ -412,10 +431,16 @@ ul {
 .articles .box .content h3 {
 	margin: 0;
 }
+.articles.dark .box .content h3 {
+	color: var(--light-background);
+}
 .articles .box .content p {
 	margin: 10px 0 0 0;
 	line-height: 1.5;
 	color: #777;
+}
+.articles.dark .box .content p {
+	color: var(--section-background);
 }
 .articles .box .info {
 	padding: 20px;
@@ -423,6 +448,9 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.articles.dark .box .info {
+	border-color: var(--dark-background);
 }
 .articles .box .info a {
 	color: var(--main-color);

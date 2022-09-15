@@ -1,9 +1,11 @@
 const header = document.querySelector('.header');
 const modeSwitch = document.querySelector('.header .mode');
 const modeIcon = document.querySelector('.header .mode a i');
+const landing = document.querySelector('.landing');
 
 modeSwitch.addEventListener('click', () => {
 	header.classList.toggle('dark');
+	landing.classList.toggle('dark');
 	if (header.classList.contains('dark')) {
 		modeIcon.className = 'far fa-light fa-moon';
 	} else {
