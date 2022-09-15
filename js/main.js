@@ -1,5 +1,17 @@
-// CountDown Till the End OF 2022
+const header = document.querySelector('.header');
+const modeSwitch = document.querySelector('.header .mode');
+const modeIcon = document.querySelector('.header .mode a i');
 
+modeSwitch.addEventListener('click', () => {
+	header.classList.toggle('dark');
+	if (header.classList.contains('dark')) {
+		modeIcon.className = 'far fa-light fa-moon';
+	} else {
+		modeIcon.className = 'far fa-thin fa-sun';
+	}
+});
+
+// CountDown Till the End OF 2022
 let CountDown = new Date('Dec 31, 2022 23:59:59').getTime();
 // console.log(CountDown);
 
