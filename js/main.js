@@ -11,9 +11,10 @@ const header = document.querySelector('.header'),
 	team = document.querySelector('.team'),
 	services = document.querySelector('.services'),
 	ourskills = document.querySelector('.our-skills'),
-	workSteps = document.querySelector('.work-steps');
-(events = document.querySelector('.events')),
-	(pricing = document.querySelector('.pricing'));
+	workSteps = document.querySelector('.work-steps'),
+	events = document.querySelector('.events'),
+	pricing = document.querySelector('.pricing'),
+	videos = document.querySelector('.videos');
 
 const darkElements = [
 	header,
@@ -30,6 +31,7 @@ const darkElements = [
 	workSteps,
 	events,
 	pricing,
+	videos,
 ];
 
 modeSwitch.addEventListener('click', () => {
