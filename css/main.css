@@ -215,9 +215,10 @@ ul {
 		height: 30px;
 	}
 	.header .main-nav .mode a {
-		font-size: 15px;
+		font-size: 14px;
 		padding: 0;
 		margin-left: 5px;
+		margin-top: 2px;
 	}
 }
 .header .main-nav > li:not(:last-child) > a:before {
