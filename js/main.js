@@ -1,35 +1,46 @@
-const header = document.querySelector('.header');
-const modeSwitch = document.querySelector('.header .mode');
-const modeIcon = document.querySelector('.header .mode a i');
-const mainTitle = document.querySelectorAll('h2.main-title');
-const landing = document.querySelector('.landing');
-const articles = document.querySelector('.articles');
-const spikes = document.querySelectorAll('.spikes');
-const gallery = document.querySelector('.gallery');
-const features = document.querySelector('.features');
-const testimonials = document.querySelector('.testimonials');
-const team = document.querySelector('.team');
-const services = document.querySelector('.services');
+const header = document.querySelector('.header'),
+	modeSwitch = document.querySelector('.header .mode'),
+	modeIcon = document.querySelector('.header .mode a i'),
+	mainTitle = document.querySelectorAll('h2.main-title'),
+	landing = document.querySelector('.landing'),
+	articles = document.querySelector('.articles'),
+	spikes = document.querySelectorAll('.spikes'),
+	gallery = document.querySelector('.gallery'),
+	features = document.querySelector('.features'),
+	testimonials = document.querySelector('.testimonials'),
+	team = document.querySelector('.team'),
+	services = document.querySelector('.services'),
+	ourskills = document.querySelector('.our-skills'),
+	workSteps = document.querySelector('.work-steps');
+events = document.querySelector('.events');
+
+const darkElements = [
+	header,
+	modeSwitch,
+	modeIcon,
+	landing,
+	articles,
+	gallery,
+	features,
+	testimonials,
+	team,
+	services,
+	ourskills,
+	workSteps,
+	events,
+];
 
 modeSwitch.addEventListener('click', () => {
-	header.classList.toggle('dark');
-
+	darkElements.forEach((element) => {
+		element.classList.toggle('dark');
+	});
 	mainTitle.forEach((title) => {
 		title.classList.toggle('dark');
 	});
 
-	landing.classList.toggle('dark');
-	articles.classList.toggle('dark');
-
 	spikes.forEach((spike) => {
 		spike.classList.toggle('dark');
 	});
-
-	gallery.classList.toggle('dark');
-	features.classList.toggle('dark');
-	testimonials.classList.toggle('dark');
-	team.classList.toggle('dark');
-	services.classList.toggle('dark');
 
 	if (header.classList.contains('dark')) {
 		modeIcon.className = 'far fa-light fa-moon';
