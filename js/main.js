@@ -9,6 +9,7 @@ const gallery = document.querySelector('.gallery');
 const features = document.querySelector('.features');
 const testimonials = document.querySelector('.testimonials');
 const team = document.querySelector('.team');
+const services = document.querySelector('.services');
 
 modeSwitch.addEventListener('click', () => {
 	header.classList.toggle('dark');
@@ -16,7 +17,7 @@ modeSwitch.addEventListener('click', () => {
 	mainTitle.forEach((title) => {
 		title.classList.toggle('dark');
 	});
-	
+
 	landing.classList.toggle('dark');
 	articles.classList.toggle('dark');
 
@@ -28,6 +29,7 @@ modeSwitch.addEventListener('click', () => {
 	features.classList.toggle('dark');
 	testimonials.classList.toggle('dark');
 	team.classList.toggle('dark');
+	services.classList.toggle('dark');
 
 	if (header.classList.contains('dark')) {
 		modeIcon.className = 'far fa-light fa-moon';

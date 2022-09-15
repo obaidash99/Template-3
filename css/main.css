@@ -855,6 +855,9 @@ ul {
 	position: relative;
 	background-color: var(--section-background);
 }
+.services.dark {
+	background-color: var(--dark-section-background);
+}
 .services .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -866,6 +869,12 @@ ul {
 	counter-increment: services;
 	position: relative;
 	transition: var(--main-transition-duration);
+}
+.services.dark .box, .services.dark .box .info {
+	background-color: var(--dark-background);
+}
+.services.dark .box .info {
+	border-top:1px solid var(--dark-section-background);
 }
 .services .box:hover {
 	transform: translateY(-10px);
