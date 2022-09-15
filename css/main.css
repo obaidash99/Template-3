@@ -688,6 +688,9 @@ ul {
 	position: relative;
 	background-color: var(--section-background);
 }
+.testimonials.dark {
+	background-color: var(--dark-section-background);
+}
 .testimonials .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -700,6 +703,9 @@ ul {
 	border-radius: 6px;
 	position: relative;
 }
+.testimonials.dark .box {
+	background-color: var(--dark-background);
+}
 .testimonials .box img {
 	position: absolute;
 	right: -10px;
@@ -709,8 +715,14 @@ ul {
 	border-radius: 50%;
 	border: 10px solid var(--section-background);
 }
+.testimonials.dark .box img {
+	border-color: var(--dark-section-background);
+}
 .testimonials .box h3 {
 	margin: 0 0 10px;
+}
+.testimonials.dark .box h3 {
+	color: var(--light-background);
 }
 .testimonials .box .title {
 	color: #777;
