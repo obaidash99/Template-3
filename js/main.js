@@ -7,6 +7,8 @@ const articles = document.querySelector('.articles');
 const spikes = document.querySelector('.spikes');
 const gallery = document.querySelector('.gallery');
 const features = document.querySelector('.features');
+const testimonials = document.querySelector('.testimonials');
+const team = document.querySelector('.team');
 
 modeSwitch.addEventListener('click', () => {
 	header.classList.toggle('dark');
@@ -18,6 +20,8 @@ modeSwitch.addEventListener('click', () => {
 	spikes.classList.toggle('dark');
 	gallery.classList.toggle('dark');
 	features.classList.toggle('dark');
+	testimonials.classList.toggle('dark');
+	team.classList.toggle('dark');
 
 	if (header.classList.contains('dark')) {
 		modeIcon.className = 'far fa-light fa-moon';

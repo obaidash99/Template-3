@@ -675,6 +675,11 @@ ul {
 	color: white;
 	background-position: left bottom;
 }
+/* .features.dark .quality a,
+.features.dark .passion a,
+.features.dark .time a {
+	background: var(--dark-background);
+} */
 /* End Features */
 /* Start Testimonials */
 .testimonials {
