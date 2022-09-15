@@ -12,7 +12,8 @@ const header = document.querySelector('.header'),
 	services = document.querySelector('.services'),
 	ourskills = document.querySelector('.our-skills'),
 	workSteps = document.querySelector('.work-steps');
-events = document.querySelector('.events');
+(events = document.querySelector('.events')),
+	(pricing = document.querySelector('.pricing'));
 
 const darkElements = [
 	header,
@@ -28,6 +29,7 @@ const darkElements = [
 	ourskills,
 	workSteps,
 	events,
+	pricing,
 ];
 
 modeSwitch.addEventListener('click', () => {
