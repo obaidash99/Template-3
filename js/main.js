@@ -1,11 +1,24 @@
 const header = document.querySelector('.header');
 const modeSwitch = document.querySelector('.header .mode');
 const modeIcon = document.querySelector('.header .mode a i');
+const mainTitle = document.querySelectorAll('h2.main-title');
 const landing = document.querySelector('.landing');
+const articles = document.querySelector('.articles');
+const spikes = document.querySelector('.spikes');
+const gallery = document.querySelector('.gallery');
+const features = document.querySelector('.features');
 
 modeSwitch.addEventListener('click', () => {
 	header.classList.toggle('dark');
+	mainTitle.forEach((title) => {
+		title.classList.toggle('dark');
+	});
 	landing.classList.toggle('dark');
+	articles.classList.toggle('dark');
+	spikes.classList.toggle('dark');
+	gallery.classList.toggle('dark');
+	features.classList.toggle('dark');
+
 	if (header.classList.contains('dark')) {
 		modeIcon.className = 'far fa-light fa-moon';
 	} else {
