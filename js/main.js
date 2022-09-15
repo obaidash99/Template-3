@@ -38,6 +38,13 @@ const darkElements = [
 	discount,
 ];
 
+const otherLinksClick = document.querySelector('.other-links');
+const megaMenu = document.querySelector('.mega-menu');
+
+otherLinksClick.onclick = () => {
+	megaMenu.classList.toggle('active');
+};
+
 modeSwitch.addEventListener('click', () => {
 	darkElements.forEach((element) => {
 		element.classList.toggle('dark');
