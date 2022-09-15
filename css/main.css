@@ -1409,6 +1409,7 @@ ul {
 }
 .videos.dark .holder .list .name {
 	background-color: var(--dark-background);
+	border-right: 1px solid var(--section-background);
 }
 .videos .holder .list ul li {
 	padding: 20px;
@@ -1437,6 +1438,9 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+.videos.dark .holder .preview {
+	background-color: var(--dark-section-background);
 }
 .videos .holder .preview img {
 	max-width: 100%;
