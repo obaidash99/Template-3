@@ -1594,7 +1594,7 @@ ul {
 @media (max-width: 991px) {
 	.discount .form {
 		flex-basis: 100%;
-		margin-bottom: 50px;
+		padding-bottom: 50px;
 	}
 }
 .discount .form .input {
