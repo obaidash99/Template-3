@@ -404,7 +404,7 @@ ul {
 .landing .go-down {
 	color: var(--main-color);
 	position: absolute;
-	bottom: 30px;
+	bottom: 65px;
 	left: 50%;
 	transform: translateX(-50%);
 	transition: var(--main-transition-duration);
